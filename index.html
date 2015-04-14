@@ -4,17 +4,19 @@
 		<title>Haruki Murakami Quiz</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=IM+Fell+English+SC' rel='stylesheet' type='text/css'>
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/app.js"></script>
 </head>
 <body>
 	<div id="quiz">
 		<div id="quiztitle"><strong>Haruki Murakami Quiz!</strong></div>
-		<div id="question">Where was Haruki Murakami born?</div>
-		<div id="answer1" class="answer"><input type="radio" class="rbutton">Kyoto</div>
-		<div id="answer2" class="answer"><input type="radio" class="rbutton">Kobe</div>
-		<div id="answer3" class="answer"><input type="radio" class="rbutton">Toyko</div>
-		<div id="answer4" class="answer"><input type="radio" class="rbutton">Osaka</div>
+		<div id="question"></div>
+		<div id="answer1" class="answer"><input type="radio" id="rb1" name="a"></div>
+		<div id="answer2" class="answer"><input type="radio" id="rb2" name="a"></div>
+		<div id="answer3" class="answer"><input type="radio" id="rb3" name="a"></div>
+		<div id="answer4" class="answer"><input type="radio" id="rb4" name="a"></div>
 		<button id="submit" type="submit">Submit</button>
-		<div id="correctanswer">Haruki Murakami was born in Kyoto, Japan, in 1949.</div>
+		<div id="correctanswer"></div>
 		<div id="progress">
 			<div id="q1" class="progresscount">1</div>
 			<div id="q2" class="progresscount">2</div>
@@ -26,3 +28,5 @@
 
 </body>
 </html>
+
+<!-- CHANGE ANSWER1, ANSWER2, ETC. TO OPTIONS.  -->
